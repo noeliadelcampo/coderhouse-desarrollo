@@ -9,12 +9,14 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    background-image: url(../Assets/imagenes/fondo-1.jpg);
+    /* Cambio temporal */
+    background-image: url(../assets/imagenes/fondo-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
     font-family: "Nunito Sans", serif;
+    
 }
 
 main {
