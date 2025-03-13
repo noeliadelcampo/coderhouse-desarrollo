@@ -87,7 +87,12 @@ p {
 }
 
 
-/* CSS archivo aventura */
+
+
+/* Pasado hasta aca  */ 
+
+
+/* CSS archivo aventura - PASADO A SCSS   */
 
 .aventura {
     display: grid;
@@ -167,7 +172,9 @@ p {
 
 
 
-/*CSS archivo index + Nosotros  */
+/*CSS archivo index + Nosotros   - 
+
+PASADO A SCSS    */
 
 
 .caja-imagen {
@@ -211,7 +218,7 @@ p {
 }
 
 
-/* CSS archivo contacto*/
+/* CSS archivo contacto - PASADO A SCSS   */
 
 .seccion-contacto {
     display: grid;
@@ -319,7 +326,7 @@ textarea {
 }
 
 
-/* CSS archivo tu-destino */
+/* CSS archivo tu-destino  -  PASADO A SCSS   */
 
 .experiencias {
     display: grid;
@@ -410,7 +417,7 @@ iframe {
     padding: 15px;
 }
 
-/* CSS footer pagina  */
+/* CSS footer pagina  - PASADO A SCSS  */
 
 .footer {
     display: flex;
@@ -473,7 +480,7 @@ a {
 }
 
 
-/* CSS archivo usuario*/
+/* CSS archivo usuario - pasado a scss */
 
 
 .login {
@@ -524,6 +531,7 @@ a {
     
     font-size: 16px;
 }
+
 
 .login-container button:hover {
     background-color: #F99417;
