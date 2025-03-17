@@ -188,16 +188,16 @@ main {
     }
     .aventura-grid {
         @include grid-container (repeat(2,1fr), repeat(2,1fr), 20px);
-        width: 90vh;
-        height: auto;
+        width: 90vw;
+        height: 90vh;
         
         .carousel {
             &.slide {
                 &.carrusel-container {
                     position: relative;
                     margin: $spacing-small;
-                    width: $medium-width;
-                    height: 90%;
+                    width: 100%;
+                    height: 100%;
                     display: flex;
                     text-align: center;
                     justify-content: center;
@@ -206,12 +206,12 @@ main {
                     .carrusel {
                         display: flex;
                         overflow: hidden;
-                        width: $max-width;
+                        width: 100%;
                         height: 100%;
                         border-bottom: $border-grid;
                         border-right: $border-grid;
                         .carousel-item {
-                            width: $max-width;
+                            width: 100%;
                             height: 100%;
                             img {
                                 object-fit: cover;
@@ -221,7 +221,7 @@ main {
                                 display: block;
                                 height: auto;
                                 object-fit: cover;
-                                display: none;
+                                
                                 
                             }
                         }
