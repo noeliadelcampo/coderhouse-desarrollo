@@ -188,16 +188,18 @@ main {
     }
     .aventura-grid {
         @include grid-container (repeat(2,1fr), repeat(2,1fr), 20px);
+        grid-template-columns: repeat(2,1fr);
         width: 90vw;
         height: 90vh;
+        margin: 0 auto;
         
         .carousel {
             &.slide {
                 &.carrusel-container {
                     position: relative;
                     margin: $spacing-small;
-                    width: 100%;
-                    height: 100%;
+                    
+                    height: 65vh;
                     display: flex;
                     text-align: center;
                     justify-content: center;
@@ -211,38 +213,35 @@ main {
                         border-bottom: $border-grid;
                         border-right: $border-grid;
                         .carousel-item {
-                            width: 100%;
-                            height: 100%;
+                            flex: 0 0 100%;
                             img {
+                                width: 100%;
+                                height: 100%;
                                 object-fit: cover;
                                 display: none;
                             }
                             &.active img {
                                 display: block;
-                                height: auto;
-                                object-fit: cover;
-                                
-                                
                             }
                         }
                     }
-                } 
-
-                .aventura-texto {
-                    img {
-                        position: absolute;
-                        top: 5%;
-                        left: 5%;
-                        background: transparent;
-                        border: none;
-                        width: auto;
-                        height: 60px;
-                    }
                 }
+            }
+            .aventura-texto {
+                img {
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    background: transparent;
+                    border: none;
+                    width: auto;
+                    height: 60px;
+                }    
             }
         }
     }
 }
+
 
 
 .tu-destino {
