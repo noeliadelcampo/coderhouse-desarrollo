@@ -54,7 +54,6 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    /* Cambio temporal */
     background-image: url(../assets/imagenes/fondo-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,8 +116,8 @@ p {
     margin-top: $spacing-small;
 }
 
-navbar {
-    container-fluid {
+.navbar {
+    .container-fluid {
         .navbar-brand.izquierda {
             margin-left: 2em;
             filter: invert(1);
@@ -174,52 +173,77 @@ main {
     }
 }
 
-
-
 .aventura {
-    @include grid-container ( 1fr, auto auto auto, 20px);
+    @include grid-container (1fr, auto auto auto, 20px);
     margin-top: 90px;
     justify-items: center;
     .aventura-titulo {
         grid-column: 1 / -1;
+        &.texto {
+            text-align: center;
+            background: transparent;
+            width: 90%;
+            margin: 10px auto;
+        }
     }
     .aventura-grid {
-        @include grid (repeat(2,1fr), 20px);
-        width: $medium-width;
-        .carrusel-container {
-            position: relative;
-            margin: $spacing-small;
-            height: 65vh;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            .carrusel {
-                display: flex;
-                overflow: hidden;
-                width: $max-width;
-                height: 100%;
-                border-bottom: $border-grid;
-                border-right: $border-grid;
-                .carousel-item {
-                    .carrusel img {
+        @include grid-container (repeat(2,1fr), repeat(2,1fr), 20px);
+        width: 90vh;
+        height: auto;
+        
+        .carousel {
+            &.slide {
+                &.carrusel-container {
+                    position: relative;
+                    margin: $spacing-small;
+                    width: $medium-width;
+                    height: 90%;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+
+                    .carrusel {
+                        display: flex;
+                        overflow: hidden;
                         width: $max-width;
                         height: 100%;
-                        object-fit: cover;
-                        display: none;
+                        border-bottom: $border-grid;
+                        border-right: $border-grid;
+                        .carousel-item {
+                            width: $max-width;
+                            height: 100%;
+                            img {
+                                object-fit: cover;
+                                display: none;
+                            }
+                            &.active img {
+                                display: block;
+                                height: auto;
+                                object-fit: cover;
+                                display: none;
+                                
+                            }
+                        }
                     }
-                    &:img.active {
-                        display: block;
-                        width: $max-width;
-                        height: auto;
-                        object-fit: cover;
-                        overflow: hidden;   
+                } 
+
+                .aventura-texto {
+                    img {
+                        position: absolute;
+                        top: 5%;
+                        left: 5%;
+                        background: transparent;
+                        border: none;
+                        width: auto;
+                        height: 60px;
                     }
-                    
                 }
             }
         }
     }
 }
+
 
 .tu-destino {
     .experiencias {
