@@ -1,0 +1,73 @@
+.tu-destino {
+    .experiencias {
+        @include grid (repeat(2,1fr), 50px);
+        margin: 10px auto;
+        width: $medium-width;
+        .lista {
+            position: relative;
+            place-items: center;
+            width: $max-width;
+            color: $text-primary-color;
+            height: auto;
+            
+            .etiqueta-top {
+                position: absolute;
+                top: 0;
+                right: 15%;
+                width: 50px;
+                height: auto;
+            }
+            .experiencias-boton {
+                width: 70%;
+                height: auto;
+                background-color: $primary-color;
+                border-radius: $border-radius-button;
+                color: $text-secondary-color;
+                display: block;
+                margin: 15px auto;
+
+                &.boton-viaje {
+                    margin: 20px 0;
+                    padding: 10px 0 10px 0;
+                    background-color: $text-primary-color;
+                    border-radius: $border-radius-button;
+                    cursor: pointer;
+                    &.boton-hover {
+                        a {
+                            text-decoration: none;
+                            color: $text-secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .ubicacion {
+            @include flex (column, center, center);
+            width: $max-width;
+            color: $text-primary-color;
+            iframe {
+                width: $medium-width;
+                height: 90%;
+                border: none;
+            }
+        }
+    }
+    .experiencias-info {
+        display: flex;
+        margin: $spacing-medium;
+        height: auto;
+        color: $text-primary-color;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .experiencias-info h3 {
+            color: $primary-color;
+            margin: auto;
+            margin-top: $spacing-small;
+        }
+        .experiencias-info p {
+            margin: auto;
+            margin-bottom: $spacing-small;
+            padding: 15px;
+        }
+    }
+}

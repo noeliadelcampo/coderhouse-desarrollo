@@ -1,0 +1,56 @@
+.aventura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin-top: 90px;
+    justify-items: center;
+    .aventura-titulo {
+        grid-column: 1 / -1;
+    }
+    .aventura-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 90%;
+        .carrusel-container {
+            position: relative;
+            margin: 20px;
+            height: 65vh;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            .carrusel {
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                border-bottom: 2px solid #F99417;
+                border-right: 2px solid #F99417;
+                .carousel-item {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: none;
+                    }
+                    &.active img {
+                        display: block;
+                    }
+                }
+            }
+            .aventura-texto {
+                img {
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    background: transparent;
+                    border: none;
+                    width: auto;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+}
