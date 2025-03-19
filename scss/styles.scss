@@ -48,6 +48,8 @@ $min-width: 80%;
 }
 
 
+
+
 @import 'aventura-styles';
 @import 'contacto-styles';
 @import 'footer-styles';
@@ -55,142 +57,29 @@ $min-width: 80%;
 @import 'tu-destino-styles';
 @import 'usuario-styles';
 
-body {
-    width: $max-width;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-image: url(../assets/imagenes/fondo-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    font-family: "Nunito Sans", serif;
-    
-}
 
-main {
-    text-align: center;
-    margin-top: 90px;
-}
-
-h1 {
-    @include typografy(40px, 1000);
-    color: $primary-color;
-    margin-top: $spacing-small;
-    margin-bottom: 23px;
-    text-transform: uppercase;
+.button {
+    border-radius: 4px;
     letter-spacing: 2px;
-}
-
-h2 {
-    @include typografy(20px, 500);
-    color: $primary-color;
-    margin: 15px 0;   
-}
-
-h3 {
-    @include typografy(18px, 300);
-    color: $primary-color;
-    margin-top: $spacing-small;
-    margin-bottom: 10px;
-}
-
-p {
-    @include typografy(16px, 100);
+    text-decoration: none;
+    border: none;
+    background-color: $secondary-color;
     color: $text-primary-color;
-    margin: 20px 60px;   
-    text-align: center;
 }
 
-.borde-destacado {
-    border-bottom: $border-grid;
-    border-right: $border-grid;
-    border-radius: $border-radius-grid;
-    background-color: $background-color;
+
+.button-secondary {
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: none;
+    background-color: $text-primary-color;
+    color: $text-secondary-color;
 }
 
-.boton-hover:hover {
+.button-hover {
     background-color: $primary-color;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+    color: $text-secondary-color;
 }
-
-.text {
-    align-self: flex-start;
-    padding: 0 20px 0 140px;
-    margin-top: $spacing-small;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

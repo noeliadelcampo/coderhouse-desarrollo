@@ -11,22 +11,17 @@
         }
         .contactanos {
             width: $medium-width;
-            background: #0f033287;
-            color: $text-secondary-color;
-            border: none;
-        }
-        .boton-acceso {
-            margin: 15px;
-            padding: 20px 0;
-            background-color: $text-primary-color;
-            border-radius: $border-radius-button;
-            cursor: pointer;
+            @extend .button;
+            &.boton-acceso {
+                margin: 15px;
+                padding: 20px 0;
+                cursor: pointer;
+            }
+            &.boton-hover:hover {
+                @extend .button-hover;
+            }
         }
         
-        a {
-            color: $text-secondary-color;
-            letter-spacing: 1px;
-        }
     }
     .contacto-mail {
         @include flex (column, space-evenly, center);
@@ -41,10 +36,9 @@
                 display: flex;
                 justify-content: center;
                 margin: 8px 0;
-                color: $text-secondary-color;
                 padding: 2px 0;
-                background-color: $primary-color;
-                border-radius: $border-radius-button;
+                width: $max-width;
+                @extend .button-secondary;
                 .input-contacto {
                     width: $max-width;
                     padding: 6px 8px;
@@ -59,7 +53,11 @@
                     letter-spacing: 2px;
                     text-transform: uppercase;
                     cursor: pointer;
-                    padding: 6px 0;    
+                    padding: 6px 0;
+                    
+                }
+                &.boton-hover:hover {
+                    @extend .button-hover;
                 }
                 textarea {
                     min-width: $max-width;

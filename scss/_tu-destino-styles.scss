@@ -20,23 +20,18 @@
             .experiencias-boton {
                 width: 70%;
                 height: auto;
-                background-color: $primary-color;
                 border-radius: $border-radius-button;
                 color: $text-secondary-color;
                 display: block;
                 margin: 15px auto;
-
                 &.boton-viaje {
                     margin: 20px 0;
                     padding: 10px 0 10px 0;
-                    background-color: $text-primary-color;
-                    border-radius: $border-radius-button;
                     cursor: pointer;
-                    &.boton-hover {
-                        a {
-                            text-decoration: none;
-                            color: $text-secondary-color;
-                        }
+                    @extend .button;
+                    &.boton-hover:hover {
+                        @extend .button-hover
+                        
                     }
                 }
             }
