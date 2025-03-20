@@ -11,6 +11,7 @@
   border: none;
   background-color: #7a748b;
   color: #F5F5F5;
+  transition: transform 0.3s ease;
 }
 
 .button-secondary, .seccion-contacto .contacto-mail .formulario .formulario-input {
@@ -20,6 +21,7 @@
   border: none;
   background-color: #F5F5F5;
   color: #0f0332;
+  transition: transform 0.3s ease;
 }
 
 .button-hover, .tu-destino .experiencias .lista .experiencias-boton.boton-viaje.boton-hover:hover, .seccion-contacto .contacto-mail .formulario .formulario-input.boton-hover:hover, .seccion-contacto .contacto-celu .contactanos.boton-hover:hover {
@@ -95,7 +97,8 @@
   text-transform: uppercase;
 }
 .seccion-contacto .contacto-celu .contactanos {
-  width: 90%;
+  width: 80%;
+  transition: transform 0.3s ease;
 }
 .seccion-contacto .contacto-celu .contactanos.boton-acceso {
   margin: 15px;
@@ -175,6 +178,7 @@
   text-decoration: none;
   color: #F5F5F5;
   letter-spacing: 2px;
+  transition: transform 0.3s ease;
 }
 .footer .footer-grid-container .footer-enlace .footer-icono {
   width: 24px;
@@ -257,6 +261,7 @@ p {
 .boton-hover:hover {
   background-color: #F99417;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
 }
 
 .text {
@@ -269,12 +274,25 @@ p {
   margin-left: 2em;
   filter: invert(1);
 }
+.navbar .container-fluid .navbar-brand.izquierda img {
+  transition: transform 0.3s ease;
+}
+.navbar .container-fluid .navbar-brand.izquierda:hover {
+  transform: scale(1.2);
+}
 .navbar .container-fluid .offcanvas {
   align-items: center;
 }
 
-.nav-hover:hover a {
+.nav-item {
+  transition: transform 0.3s ease;
+}
+.nav-item.nav-hover:hover a {
   color: #F99417;
+  transform: scale(1.2);
+}
+.nav-item .nav-link {
+  margin: auto 5px;
 }
 
 .caja-imagen {
@@ -332,6 +350,7 @@ main .texto {
   right: 15%;
   width: 50px;
   height: auto;
+  transform: scale(1.2);
 }
 .tu-destino .experiencias .lista .experiencias-boton {
   width: 70%;
@@ -345,6 +364,7 @@ main .texto {
   margin: 20px 0;
   padding: 10px 0 10px 0;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .tu-destino .experiencias .ubicacion {
   display: flex;
@@ -597,7 +617,6 @@ main .texto {
   }
   .aventura .aventura-grid .carrusel-container {
     width: 90%;
-    height: 40vh;
   }
   .aventura .aventura-grid .carrusel-container .aventura-texto img {
     width: 80px;

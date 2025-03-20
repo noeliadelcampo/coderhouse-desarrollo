@@ -16,6 +16,7 @@
                 right: 15%;
                 width: 50px;
                 height: auto;
+                transform: scale(1.2);
             }
             .experiencias-boton {
                 width: 70%;
@@ -29,6 +30,7 @@
                     padding: 10px 0 10px 0;
                     cursor: pointer;
                     @extend .button;
+                    transition: transform 0.3s ease;
                     &.boton-hover:hover {
                         @extend .button-hover
                         

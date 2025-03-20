@@ -60,6 +60,7 @@ $min-width: 80%;
     border: none;
     background-color: $secondary-color;
     color: $text-primary-color;
+    transition: transform 0.3s ease;
 }
 
 
@@ -70,6 +71,7 @@ $min-width: 80%;
     border: none;
     background-color: $text-primary-color;
     color: $text-secondary-color;
+    transition: transform 0.3s ease;
 }
 
 .button-hover {

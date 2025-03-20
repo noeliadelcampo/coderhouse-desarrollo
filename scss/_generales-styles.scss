@@ -62,6 +62,7 @@ p {
 .boton-hover:hover {
     background-color: $primary-color;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
 
 }
 
@@ -76,6 +77,12 @@ p {
         .navbar-brand.izquierda {
             margin-left: 2em;
             filter: invert(1);
+            img {
+                transition: transform 0.3s ease;
+            }
+            &:hover {
+                transform: scale(1.2);
+            }
             
         }
         .offcanvas {
@@ -83,10 +90,18 @@ p {
         }
     }
 }
-
-.nav-hover:hover a {
-    color: $primary-color;
+.nav-item {
+    transition: transform 0.3s ease;
+    &.nav-hover:hover a {
+        color: $primary-color;
+        transform: scale(1.2);
+    }
+    .nav-link {
+        margin: auto 5px;
+    }
 }
+
+
 
 
 .caja-imagen {
