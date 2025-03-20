@@ -478,11 +478,11 @@ main .texto {
   .footer .footer-grid-container {
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
   }
   .footer .footer-grid-container .footer-enlace {
     font-size: 0.9rem;
-    gap: 8px;
+    gap: 2px;
   }
   .footer .footer-grid-container .footer-enlace span {
     display: none;
@@ -569,6 +569,9 @@ main .texto {
   }
 }
 @media (max-width: 576px) {
+  p {
+    text-align: justify;
+  }
   .navbar .navbar-brand.izquierda {
     margin-left: 1em;
   }
@@ -695,7 +698,7 @@ main .texto {
     font-size: 0.85rem;
   }
   .login .login-container {
-    width: 60%;
+    width: 80%;
     padding: 20px;
   }
   .login .login-container .login-form h2 {
