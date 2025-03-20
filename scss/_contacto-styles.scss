@@ -1,6 +1,10 @@
 .seccion-contacto {
-    @include grid ( repeat(3,1fr), 40px);
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
     align-items: stretch;
+    
     margin: 100px 30px 0 30px;
     .contacto-celu {
         @include flex ( column, space-evenly, center);

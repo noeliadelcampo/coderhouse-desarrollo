@@ -1,10 +1,4 @@
-@import 'aventura-styles';
-@import 'contacto-styles';
-@import 'footer-styles';
-@import 'generales-styles';
-@import 'tu-destino-styles';
-@import 'usuario-styles';
-@import 'media-styles';
+
 
 $text-primary-color: #F5F5F5;
 $text-secondary-color: #0f0332;
@@ -84,3 +78,10 @@ $min-width: 80%;
     color: $text-secondary-color;
 }
 
+@import 'aventura-styles';
+@import 'contacto-styles';
+@import 'footer-styles';
+@import 'generales-styles';
+@import 'tu-destino-styles';
+@import 'usuario-styles';
+@import 'media-styles';
