@@ -579,13 +579,15 @@ main .texto {
     font-size: 1.5rem;
   }
   .caja-imagen {
-    height: 30vh;
+    height: 20vh;
     width: 90%;
+  }
+  .caja-imagen img {
+    object-fit: cover;
   }
   .caja-imagen .marca-agua img {
     width: 60%;
     left: 0;
-    object-fit: cover;
   }
   .footer {
     margin: auto;
@@ -663,6 +665,7 @@ main .texto {
     margin: 15px auto;
     width: 90%;
     place-items: center;
+    align-items: center;
   }
   .tu-destino .experiencias .lista {
     align-items: center;
