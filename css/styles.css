@@ -576,9 +576,8 @@ main .texto {
     font-size: 1.5rem;
   }
   .caja-imagen {
-    height: 40vh;
+    height: 30vh;
     width: 90%;
-    border-radius: 2px;
   }
   .caja-imagen .marca-agua img {
     width: 60%;
