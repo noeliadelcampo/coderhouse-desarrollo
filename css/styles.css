@@ -206,10 +206,10 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../assets/imagenes/fondo-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-attachment: fixed;
   font-family: "Nunito Sans", serif;
 }
 
@@ -658,6 +658,7 @@ main .texto {
     gap: 5px;
     margin: 15px auto;
     width: 90%;
+    place-items: center;
   }
   .tu-destino .experiencias .lista {
     align-items: center;
