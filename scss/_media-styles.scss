@@ -11,6 +11,9 @@
     .caja-imagen {
         height: 50vh;
         width: 95%;
+        img {
+            object-fit: cover;
+        }
     }
     .footer {
         margin: auto;
@@ -141,6 +144,7 @@
             img {
                 width: 60%;
                 left: 0;
+                object-fit: cover;
             }
             
         }

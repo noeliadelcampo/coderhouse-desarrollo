@@ -469,6 +469,9 @@ main .texto {
     height: 50vh;
     width: 95%;
   }
+  .caja-imagen img {
+    object-fit: cover;
+  }
   .footer {
     margin: auto;
   }
@@ -582,6 +585,7 @@ main .texto {
   .caja-imagen .marca-agua img {
     width: 60%;
     left: 0;
+    object-fit: cover;
   }
   .footer {
     margin: auto;
