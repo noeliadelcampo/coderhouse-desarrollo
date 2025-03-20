@@ -1,5 +1,5 @@
 .seccion-contacto {
-    @include grid (repeat(3,1fr), 40px);
+    @include grid ( repeat(3,1fr), 40px);
     align-items: stretch;
     margin: 100px 30px 0 30px;
     .contacto-celu {
