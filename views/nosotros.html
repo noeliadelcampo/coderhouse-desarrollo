@@ -15,58 +15,56 @@
 
     <!-- Barra de navegacion con BOOTSTRAP -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand izquierda" href="./usuario.html"><img src="../assets/imagenes/icono-usuario.png" alt="Usuario"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Just Trip</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link" href="./aventura.html">Aventura</a>
-                        </li>
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link" href="./tu-destino.html">Tu destino</a>
-                        </li>
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item nav-hover">
-                            <a class="nav-link" href="./usuario.html">Usuario</a>
-                        </li>
-                        
-                    </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand izquierda" href="./usuario.html"><img src="../assets/imagenes/icono-usuario.png" alt="Usuario"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Just Trip</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link" href="./aventura.html">Aventura</a>
+                            </li>
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link" href="./tu-destino.html">Tu destino</a>
+                            </li>
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav-hover">
+                                <a class="nav-link" href="./usuario.html">Usuario</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    
-
+        </nav>
+    </header>
 
     <!-- Carousel + slide con BOOTSTRAP -->
 
-
     <main class="main-nosotros">
         
-        <section class="texto">
+        <div class="texto">
             <H1>Somos una raza especial</H1>
             <p>
                 No todos ven el mundo de la misma manera. Hay quienes eligen la comodidad, y otros que buscan lo desconocido, lo desafiante, lo extraordinario. Somos de esos que encuentran libertad en el viento, que sienten la llamada de la aventura en cada horizonte y que saben que la vida se mide en experiencias, no en rutinas.
             </p>
-        </section>
+        </div>
 
         <section id="carousel5" class="caja-imagen carousel slide">
             
@@ -101,17 +99,15 @@
             
         </section>
 
-        <section class="texto">
+        <div class="texto">
             <p>
                 Exploramos sin miedo, vivimos sin límites y transformamos cada salto, cada inmersión, cada ascenso en una historia que nos define. Porque ser una raza especial no es solo un lema, es una forma de ver y vivir la vida.
             </p>
-        </section>
+        </div>
 
     </main>
 
-
     <!-- FOOTER - Grid container con BOOTSTRAP -->
-
 
     <footer class="footer text-center">
         <section class="footer-grid-container d-flex flex-wrap justify-content-around align-items-center py-3">
@@ -141,9 +137,7 @@
         </section>
     </footer>
 
-
     <!-- SCRIPT -->
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 

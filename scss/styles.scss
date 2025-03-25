@@ -47,7 +47,18 @@ $min-width: 80%;
     box-sizing: border-box;
 }
 
-
+body {
+    width: $max-width;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/imagenes/fondo-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "Nunito Sans", serif;
+}
 
 
 

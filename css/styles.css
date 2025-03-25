@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/imagenes/fondo-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Nunito Sans", serif;
+}
+
 .button, .tu-destino .experiencias .lista .experiencias-boton.boton-viaje, .seccion-contacto .contacto-celu .contactanos {
   border-radius: 4px;
   letter-spacing: 2px;
@@ -192,25 +205,6 @@
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  background-image: url(../assets/imagenes/fondo-1.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  font-family: "Nunito Sans", serif;
 }
 
 main {
@@ -471,6 +465,10 @@ main .texto {
   }
   .caja-imagen img {
     object-fit: cover;
+  }
+  .caja-imagen .marca-agua img {
+    width: 80%;
+    left: 0;
   }
   .footer {
     margin: auto;
