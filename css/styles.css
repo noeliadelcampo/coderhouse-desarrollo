@@ -300,10 +300,11 @@ p {
   margin: 15PX auto;
   overflow: hidden;
 }
-.caja-imagen .carousel-item .caja-imagen img {
+.caja-imagen .carousel-item .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 10%;
   border-radius: inherit;
 }
 .caja-imagen .marca-agua {
@@ -553,15 +554,15 @@ main .texto {
   .experiencias .experiencias .experiencias-info p {
     font-size: 0.9rem;
   }
-  .experiencias .loging .loging-container {
-    width: 50%;
+  .loging .loging-container {
+    width: 80%;
     padding: 30px;
   }
-  .experiencias .loging .loging-container input {
+  .loging .loging-container input {
     padding: 15px;
     font-size: 14px;
   }
-  .experiencias .loging .loging-container button {
+  .loging .loging-container button {
     padding: 15px;
     font-size: 14px;
   }

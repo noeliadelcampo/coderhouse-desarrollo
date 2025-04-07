@@ -99,11 +99,13 @@ p {
     margin: 15PX auto; 
     overflow: hidden;
     .carousel-item {
-        .caja-imagen img {
+        .carousel-item img {
             width: $max-width;
             height: 100%;
             object-fit: cover;
-            border-radius: inherit;    
+            object-position: 50% 10%;
+            border-radius: inherit; 
+            
         }
     }
     .marca-agua {
