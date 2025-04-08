@@ -30,6 +30,10 @@
         @include flex (column, space-evenly, center);
         padding: 15px;
         color: $text-primary-color;
+        h3 {
+            color: $primary-color;
+            text-transform: uppercase;    
+        }
         .formulario {
             @include flex (column, space-evenly, center);
             padding: 0;

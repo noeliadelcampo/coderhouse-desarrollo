@@ -1,5 +1,8 @@
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 main {
@@ -31,10 +34,24 @@ h3 {
 
 p {
     @include typografy(16px, 100);
-    color: $text-primary-color;
-    margin: 20px 60px;   
+    color: $text-primary-color;   
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+
+
+body {
+    width: $max-width;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/imagenes/fondo-1.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "Nunito Sans", serif;
 }
 
 .borde-destacado {
@@ -92,7 +109,7 @@ p {
 .caja-imagen {
     position: relative;
     width: $medium-width;
-    height: 65vh;
+    height: 75vh;
     display: flex;
     border: 1px solid #4D4C7D;
     border-radius: $border-radius-grid;
@@ -104,20 +121,10 @@ p {
             width: $max-width;
             height: 100%;
             object-fit: cover;
-            object-position: 50% 10%;
+            object-position: 50% 100%;
             border-radius: inherit; 
             
         }
-    }
-    .marca-agua {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: transparent;
-        border: none;
-        transform: translate(-50%, -50%);
-        width: $medium-width;
-        height: auto;
     }
 }
 
@@ -127,5 +134,33 @@ main {
         background: transparent;
         width: $medium-width;
         margin: 10px auto;
+    }
+}
+
+.main-nosotros {
+    justify-items: center;
+    .nosotros-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 90%;
+        .carrusel-container {
+            height: 65vh;
+            &.carrusel {
+                display: flex;
+                overflow: hidden;
+                .carousel-item {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: none;
+                    }
+                    &.active img {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }

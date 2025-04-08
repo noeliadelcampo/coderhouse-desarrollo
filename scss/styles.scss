@@ -41,27 +41,6 @@ $min-width: 80%;
     font-weight: $weight;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    width: $max-width;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-image: url(../assets/imagenes/fondo-1.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    font-family: "Nunito Sans", serif;
-}
-
-
-
 
 
 .button {
@@ -91,10 +70,10 @@ body {
     color: $text-secondary-color;
 }
 
+@import 'generales-styles';
 @import 'aventura-styles';
 @import 'contacto-styles';
 @import 'footer-styles';
-@import 'generales-styles';
 @import 'tu-destino-styles';
 @import 'usuario-styles';
 @import 'media-styles';
