@@ -142,10 +142,11 @@
         font-size: 1.5rem;
     }
     .caja-imagen {
-        height: 35vh;
+        height: 30vh;
         width: 90%;
         img {
             object-fit: cover;
+            height: 100%;
         }
     }
     .footer {
@@ -174,8 +175,6 @@
         }
     }
     .main-nosotros {
-        
-        
         .texto {
             width: 90%;
             p {
@@ -187,6 +186,16 @@
             grid-row: auto;
             gap: 5px;
             justify-items: center;
+            .carrusel-container {
+                width: 90%;
+                .aventura-texto {
+                    img {
+                        width: 80px;
+                        height: auto;
+                    }
+                    
+                }
+            }
 
         }
     }
@@ -245,10 +254,10 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto auto;
             gap: 5px;
-            margin: 15px auto;
+            margin: 10px auto;
             width: 90%;
             place-items: center;
-            align-items: center;
+            
             .lista {
                 align-items: center;
                 .experiencias-boton {
@@ -269,16 +278,16 @@
                     border-radius: 4px;
                 }
             }
-            .experiencias-info {
-                width: 90%;
-                margin: auto 20px;
-                p {
-                    
-                    margin: auto 20px;
-                    font-size: 0.85rem;
-                }
-            }
             
+            
+        }
+        .experiencias-info {
+            width: 90%;
+            p {
+                margin: 0 20px 10px 20px;
+                
+                font-size: 0.85rem;
+            }
         }
     }
     .login {

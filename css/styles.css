@@ -320,6 +320,7 @@ main .texto {
   gap: 30px;
   max-width: 900px;
   justify-content: space-evenly;
+  margin: 5px auto;
 }
 .footer .footer-grid-container .footer-enlace {
   display: flex;
@@ -341,7 +342,7 @@ main .texto {
 }
 .footer .copyright {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 14px;
 }
 
@@ -601,11 +602,12 @@ main .texto {
     font-size: 1.5rem;
   }
   .caja-imagen {
-    height: 35vh;
+    height: 30vh;
     width: 90%;
   }
   .caja-imagen img {
     object-fit: cover;
+    height: 100%;
   }
   .footer {
     margin: auto;
@@ -643,6 +645,13 @@ main .texto {
     grid-row: auto;
     gap: 5px;
     justify-items: center;
+  }
+  .main-nosotros .nosotros-grid .carrusel-container {
+    width: 90%;
+  }
+  .main-nosotros .nosotros-grid .carrusel-container .aventura-texto img {
+    width: 80px;
+    height: auto;
   }
   .aventura .aventura-grid {
     grid-template-columns: 1fr;
@@ -691,10 +700,9 @@ main .texto {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 5px;
-    margin: 15px auto;
+    margin: 10px auto;
     width: 90%;
     place-items: center;
-    align-items: center;
   }
   .tu-destino .experiencias .lista {
     align-items: center;
@@ -716,12 +724,11 @@ main .texto {
     border: none;
     border-radius: 4px;
   }
-  .tu-destino .experiencias .experiencias-info {
+  .tu-destino .experiencias-info {
     width: 90%;
-    margin: auto 20px;
   }
-  .tu-destino .experiencias .experiencias-info p {
-    margin: auto 20px;
+  .tu-destino .experiencias-info p {
+    margin: 0 20px 10px 20px;
     font-size: 0.85rem;
   }
   .login .login-container {
